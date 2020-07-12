@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>New Document - Hexo</title>
+  <title>Redis学习(一) - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -163,7 +163,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      4 字
+      298 字
     </span>
   
 
@@ -173,7 +173,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      4
        分钟
     </span>
   
@@ -205,6 +205,40 @@
             
             <article class="markdown-body">
               <p>#<center>Redis学习(一)</center>#</p>
+<h2 id="Redis常用命令"><a href="#Redis常用命令" class="headerlink" title="Redis常用命令"></a>Redis常用命令</h2><p>详细能容,查看网站:<a href="http://www.redis.cn" target="_blank" rel="noopener">http://www.redis.cn</a></p>
+<h3 id="1-Redis系统常用命令"><a href="#1-Redis系统常用命令" class="headerlink" title="1.Redis系统常用命令:"></a>1.Redis系统常用命令:</h3><p>查询所有key:     key * </p>
+<p>设定过期时间: expire key time</p>
+<p>取消过期时间: persist key</p>
+<p>查看过期剩余时间: ttl key</p>
+<p>查询其他数据库: select 0-15</p>
+<p>移动key到其他库: move key 0-15</p>
+<p>重命名: rename key newname</p>
+<p>查询key数量: dbsize</p>
+<p>查询数据库信息: info</p>
+<p>查看数据库配置: config get *</p>
+<p>清空当前数据库: flushdb</p>
+<p>清空所有数据库: flushall</p>
+<p>发布订阅: subscribe 订阅    publish  发布</p>
+<h3 id="2-Redis常用5种数据类型-String-Hash-List-Set-Zset"><a href="#2-Redis常用5种数据类型-String-Hash-List-Set-Zset" class="headerlink" title="2.Redis常用5种数据类型:String,Hash,List,Set,Zset"></a>2.Redis常用5种数据类型:String,Hash,List,Set,Zset</h3><h4 id="2-1-String类型"><a href="#2-1-String类型" class="headerlink" title="2.1 String类型"></a>2.1 String类型</h4><p>新增: set,mset,setbit ,setnx,setex,msetex,psetex</p>
+<p>修改: append,incr,incrby,decr,decrby</p>
+<p>查询: get,strlen,mget,getrange,bitcount</p>
+<p>删除: del</p>
+<h4 id="2-2-Hash类型"><a href="#2-2-Hash类型" class="headerlink" title="2.2 Hash类型"></a>2.2 Hash类型</h4><p>新增: hset,hmset,hsetnx</p>
+<p>修改: hexists,hincrby,hincrbyfloat</p>
+<p>查询: hget,hgetall,hkeys,hlen,hvals,hstrlen</p>
+<p>删除: hdel</p>
+<h4 id="2-3-List类型"><a href="#2-3-List类型" class="headerlink" title="2.3 List类型"></a>2.3 List类型</h4><p>新增: lset</p>
+<p>修改: linsert key berfore, linsert key after, lpush,lpushx,rpush,rpushx</p>
+<p>查询: lindex,llen,lrange</p>
+<p>删除: blpop,brpop,lpop,rpop,brpoppush,lrem</p>
+<h4 id="2-4-Set类型"><a href="#2-4-Set类型" class="headerlink" title="2.4 Set类型"></a>2.4 Set类型</h4><p>新增: sadd</p>
+<p>修改: sunion,sdiff,sinter</p>
+<p>查询: sunionstore,sdiffstore,sinterstore,sismember,smembers</p>
+<p>删除: smove,srem</p>
+<h4 id="2-5-Zset类型"><a href="#2-5-Zset类型" class="headerlink" title="2.5 Zset类型"></a>2.5 Zset类型</h4><p>新增: Zadd key score member</p>
+<p>修改: zincrby key increment member</p>
+<p>查询: zcard key,zcount key min max,zunionstore ,zlexcount,zrange,zrank</p>
+<p>删除: zrem,zrevrank</p>
 
             </article>
             <hr>
@@ -365,7 +399,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "New Document&nbsp;",
+        "Redis学习(一)&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
