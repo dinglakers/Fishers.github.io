@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>发布个人博客步骤</title>
+    <link href="/fishers/2020/07/12/%E5%8F%91%E5%B8%83%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%AD%A5%E9%AA%A4/"/>
+    <url>/fishers/2020/07/12/%E5%8F%91%E5%B8%83%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%AD%A5%E9%AA%A4/</url>
+    
+    <content type="html"><![CDATA[<p>#<center>发布个人博客步骤</center>#</p><h2 id="一-用-MarkdownPad2-编辑文件"><a href="#一-用-MarkdownPad2-编辑文件" class="headerlink" title="一.用 MarkdownPad2 编辑文件"></a>一.用 MarkdownPad2 编辑文件</h2><h3 id="1-新建文档"><a href="#1-新建文档" class="headerlink" title="1.新建文档"></a>1.新建文档</h3><h4 id="1-1手动创建"><a href="#1-1手动创建" class="headerlink" title="1.1手动创建"></a>1.1手动创建</h4><p>在 ** \Hexo \ source\ _posts ** 目录下右键鼠标新建文本文档，改后缀为 .md 即可</p><h4 id="1-2代码创建"><a href="#1-2代码创建" class="headerlink" title="1.2代码创建"></a>1.2代码创建</h4><pre><code>$ hexo n &quot;文章标题&quot;</code></pre><h3 id="2-常用命令"><a href="#2-常用命令" class="headerlink" title="2.常用命令"></a>2.常用命令</h3><p>center   : 标签,将文本置中</p><p>Ctrl + I ： 斜体</p><p>Ctrl + B ： 粗体</p><p>Ctrl + G ： 图片</p><p>Ctrl + Q ： 引用</p><p>Ctrl + 1 ： 标题 1</p><p>Ctrl + 2 ： 标题 2</p><p>Ctrl + 3 ： 标题 3</p><p>Ctrl + K ： 代码块</p><p>Ctrl + L ： 超链接</p><p>Ctrl + T ： 时间戳</p><p>Ctrl + U ： 无序列表</p><p>Ctrl + R ： 水平标尺</p><p>F4 ： 启用水平布局</p><p>F5 ： 启用实时预览</p><p>F6 ： 在浏览器中预览</p><p>Ctrl + Shift + O ： 有序列表</p><p><a href="https://blog.csdn.net/ckb58/article/details/52584619" target="_blank" rel="noopener">原文链接</a></p><h2 id="二-上传文件"><a href="#二-上传文件" class="headerlink" title="二.上传文件"></a>二.上传文件</h2><h3 id="1-本地查看效果"><a href="#1-本地查看效果" class="headerlink" title="1.本地查看效果"></a>1.本地查看效果</h3><p>在自己的博客文件夹右键鼠标，点击 Git Bash Here</p><p>执行以下命令，执行完即可登录<a href="http://localhost:4000/" target="_blank" rel="noopener"> http://localhost:4000/</a> 查看效果</p><pre><code>$ hexo generate$ hexo server</code></pre><h3 id="2-把文件推送到服务器上"><a href="#2-把文件推送到服务器上" class="headerlink" title="2.把文件推送到服务器上"></a>2.把文件推送到服务器上</h3><pre><code>$ hexo g$ hexo d</code></pre><p>或者简写为:</p><pre><code>$ hexo d -g</code></pre><h3 id="3-远程访问-查看在线效果"><a href="#3-远程访问-查看在线效果" class="headerlink" title="3.远程访问,查看在线效果"></a>3.远程访问,查看在线效果</h3>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>springboot开发技巧</title>
     <link href="/fishers/2020/06/14/springboot%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/"/>
     <url>/fishers/2020/06/14/springboot%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</url>
