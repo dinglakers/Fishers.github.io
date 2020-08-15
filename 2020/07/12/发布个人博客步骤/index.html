@@ -163,7 +163,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      271 字
+      714 字
     </span>
   
 
@@ -173,7 +173,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      3
+      8
        分钟
     </span>
   
@@ -225,7 +225,34 @@
 <p>F6 ： 在浏览器中预览</p>
 <p>Ctrl + Shift + O ： 有序列表</p>
 <p><a href="https://blog.csdn.net/ckb58/article/details/52584619" target="_blank" rel="noopener">原文链接</a></p>
-<h2 id="二-上传文件"><a href="#二-上传文件" class="headerlink" title="二.上传文件"></a>二.上传文件</h2><h3 id="1-本地查看效果"><a href="#1-本地查看效果" class="headerlink" title="1.本地查看效果"></a>1.本地查看效果</h3><p>在自己的博客文件夹右键鼠标，点击 Git Bash Here</p>
+<h2 id="二-把图片存入markdown文件"><a href="#二-把图片存入markdown文件" class="headerlink" title="二.把图片存入markdown文件"></a>二.把图片存入markdown文件</h2><p>用base64转码工具把图片转成一段字符串，然后把字符串填到基础格式中链接的那个位置。</p>
+<p>基础用法：</p>
+<pre><code>![avatar](data:image/png;base64,  iVBORw0......)</code></pre><p>这个时候会发现插入的这一长串字符串会把整个文章分割开，非常影响编写文章时的体验。如果能够把大段的base64字符串放在文章末尾，然后在文章中通过一个id来调用，文章就不会被分割的这么乱了。</p>
+<p>高级用法,比如：</p>
+<pre><code>#base64str 图片编号,放在图片对应位置
+![avatar][base64str]
+
+#放在文档末尾
+[base64str]:data:image/png;base64,后接图片编码</code></pre><p>图片存储方法,参考链接：<a href="https://www.jianshu.com/p/280c6a6f2594" target="_blank" rel="noopener">https://www.jianshu.com/p/280c6a6f2594</a></p>
+<p>base64的下载地址: <a href="https://dl.pconline.com.cn/download/1863713.html" target="_blank" rel="noopener">https://dl.pconline.com.cn/download/1863713.html
+</a></p>
+<h2 id="三-字体、字号、颜色设置"><a href="#三-字体、字号、颜色设置" class="headerlink" title="三.字体、字号、颜色设置"></a>三.字体、字号、颜色设置</h2><pre><code>&lt;font face=&quot;微软雅黑&quot; &gt;微软雅黑字体&lt;/font&gt;
+&lt;font face=&quot;黑体&quot; &gt;黑体&lt;/font&gt;
+&lt;font size=3 &gt;3号字&lt;/font&gt;
+&lt;font size=4 &gt;4号字&lt;/font&gt;
+&lt;font color=#FF0000 &gt;红色&lt;/font&gt;
+&lt;font color=#008000 &gt;绿色&lt;/font&gt;
+&lt;font color=#0000FF &gt;蓝色&lt;/font&gt;</code></pre><p>上述设置显示效果如下所示：</p>
+<p><font face="微软雅黑" >微软雅黑字体</font></p>
+<p><font face="黑体" >黑体</font></p>
+<p><font size=3 >3号字</font></p>
+<p><font size=4 >4号字</font></p>
+<p><font color=#FF0000 >红色</font></p>
+<p><font color=#008000 >绿色</font></p>
+<p><font color=#0000FF >蓝色</font></p>
+<p><font size=4 color=#FF0000 >注意：</font><br><font size=2 color=#FF0000 ><br>CSDN中的blog默认字号为3号字，字号数值可设为1~7，默认字体为微软雅黑。其它颜色值可参考 CSDN-markdown编辑器语法——字体、字号与颜色</font></p>
+<p>字体、字号以及颜色可在&lt;font ……中同时设置，如可对文字“微软雅黑字体”设置格式：<br><font face="微软雅黑" size=6 color=#FF0000 >微软雅黑字体</font></p>
+<pre><code>&lt;font face=&quot;微软雅黑&quot; size=6 color=#FF0000 &gt;微软雅黑字体&lt;/font&gt;</code></pre><h2 id="三-上传文件"><a href="#三-上传文件" class="headerlink" title="三.上传文件"></a>三.上传文件</h2><h3 id="1-本地查看效果"><a href="#1-本地查看效果" class="headerlink" title="1.本地查看效果"></a>1.本地查看效果</h3><p>在自己的博客文件夹右键鼠标，点击 Git Bash Here</p>
 <p>执行以下命令，执行完即可登录<a href="http://localhost:4000/" target="_blank" rel="noopener"> http://localhost:4000/</a> 查看效果</p>
 <pre><code>$ hexo generate
 $ hexo server</code></pre><h3 id="2-把文件推送到服务器上"><a href="#2-把文件推送到服务器上" class="headerlink" title="2.把文件推送到服务器上"></a>2.把文件推送到服务器上</h3><pre><code>$ hexo g
